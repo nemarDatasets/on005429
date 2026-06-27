@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Auditory oddball comparison (Optimum-1, Learning-oddball, and the local–global paradigm)",
-  "description": "This dataset comprises raw EEG recordings from 15 participants performing three auditory oddball paradigms: Optimum-1 (optimized for mismatch negativity), learning-oddball (optimized for P3b), and local–global paradigm (assessing local and global effects). The data were collected in a single EEG session with three consecutive tasks presented in counterbalanced order, designed to enable within-individual comparison of event-related potential components across specialized oddball sequences.",
-  "methods_description": "EEG data were recorded from 15 participants at either 2500 Hz (n=14) or 5000 Hz (n=1) sampling rate during three auditory oddball tasks presented consecutively within a single session. Each participant completed the Optimum-1 sequence for MMN assessment, the learning-oddball sequence for P3b assessment, and the local–global paradigm for local and global effect assessment. Stimulation sequences were controlled using PsychToolbox, with event timestamps recorded for trigger validation and interpolation when necessary.",
+  "description": "This dataset comprises raw EEG recordings from 15 participants performing three auditory oddball paradigms: Optimum-1 (optimized for mismatch negativity), learning-oddball (optimized for P3b), and local–global paradigm (for local and global effects). The data were collected in a single EEG session with three consecutive tasks presented as separate sessions, enabling within-individual comparison of event-related potential sensitivity across specialized oddball sequences.",
+  "methods_description": "EEG data were recorded from 15 participants (14 at 2500 Hz, 1 at 5000 Hz sampling rate) performing three auditory oddball sequences presented consecutively in counterbalanced order. Each participant completed the Optimum-1 sequence for MMN assessment, learning-oddball for P3b assessment, and local–global paradigm for local and global effect assessment. Stimulation parameters and event timestamps are provided in source data files, with corrected event markers accounting for occasional trigger skipping by the recording system.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,13 +17,13 @@
       "term": "EEG"
     },
     {
+      "term": "auditory oddball"
+    },
+    {
       "term": "mismatch negativity"
     },
     {
       "term": "P3b"
-    },
-    {
-      "term": "auditory oddball"
     },
     {
       "term": "Event-Related Potentials, P300",
