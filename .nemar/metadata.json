@@ -1,30 +1,74 @@
 {
   "version": "2.0",
-  "dataset_id": "on005429",
-  "source": "openneuro",
-  "source_id": "ds005429",
+  "pipeline_stage": "validated",
   "title": "Auditory oddball comparison (Optimum-1, Learning-oddball, and the local–global paradigm)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Renate Rutiku": {},
     "Chiara Fiscone": {},
     "Marcello Massimini": {},
     "Simone Sarasso": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005429.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005429",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005429",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.8",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises raw EEG recordings from 15 participants performing three auditory oddball paradigms: Optimum-1 (optimized for mismatch negativity detection), learning-oddball (optimized for P3b), and local-global paradigm (for assessing local and global effects). The study compares within-individual sensitivity of mismatch negativity (MMN) and P3b components across these specialized oddball sequences, with data collected in a single experimental session organized into three separate recording sessions.",
+  "methods_description": "EEG data were recorded from 15 participants across three auditory oddball sequences presented consecutively within a single experimental session. Most participants were recorded at 2500 Hz sampling rate (participant 13 at 5000 Hz). Each participant completed the Optimum-1 sequence for MMN assessment, learning-oddball sequence for P3b assessment, and local-global paradigm recorded in two separate EEG files (except participant 5 with three runs). Stimulation was controlled using PsychToolbox, with event timing information provided in both original trigger markers and corrected event files accounting for occasional trigger skips.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "mismatch negativity"
+    },
+    {
+      "term": "P3b"
+    },
+    {
+      "term": "auditory oddball"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "local-global paradigm"
+    }
+  ],
+  "source_hash": "cb333577d9d62e15fd21523ceb944faba80c71789205db81ac599175a4a7b777"
 }
