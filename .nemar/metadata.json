@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Auditory oddball comparison (Optimum-1, Learning-oddball, and the local–global paradigm)",
+  "description": "This dataset comprises raw EEG recordings from 15 participants performing three auditory oddball paradigms: Optimum-1 (optimized for mismatch negativity), learning-oddball (optimized for P3b), and local–global paradigm (assessing local and global effects). The data were collected in a single EEG session with three consecutive tasks presented in counterbalanced order, designed to enable within-individual comparison of event-related potential components across specialized oddball sequences.",
+  "methods_description": "EEG data were recorded from 15 participants at either 2500 Hz (n=14) or 5000 Hz (n=1) sampling rate during three auditory oddball tasks presented consecutively within a single session. Each participant completed the Optimum-1 sequence for MMN assessment, the learning-oddball sequence for P3b assessment, and the local–global paradigm for local and global effect assessment. Stimulation sequences were controlled using PsychToolbox, with event timestamps recorded for trigger validation and interpolation when necessary.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,43 +12,6 @@
     "Marcello Massimini": {},
     "Simone Sarasso": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds005429.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005429",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005429",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".json",
-    ".m",
-    ".mat",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk"
-  ],
-  "description": "This dataset comprises raw EEG recordings from 15 participants performing three auditory oddball paradigms: Optimum-1 (optimized for mismatch negativity detection), learning-oddball (optimized for P3b), and local-global paradigm (for assessing local and global effects). The study compares within-individual sensitivity of mismatch negativity (MMN) and P3b components across these specialized oddball sequences, with data collected in a single experimental session organized into three separate recording sessions.",
-  "methods_description": "EEG data were recorded from 15 participants across three auditory oddball sequences presented consecutively within a single experimental session. Most participants were recorded at 2500 Hz sampling rate (participant 13 at 5000 Hz). Each participant completed the Optimum-1 sequence for MMN assessment, learning-oddball sequence for P3b assessment, and local-global paradigm recorded in two separate EEG files (except participant 5 with three runs). Stimulation was controlled using PsychToolbox, with event timing information provided in both original trigger markers and corrected event files accounting for occasional trigger skips.",
   "keywords": [
     {
       "term": "EEG"
@@ -70,5 +35,41 @@
       "term": "local-global paradigm"
     }
   ],
-  "source_hash": "cb333577d9d62e15fd21523ceb944faba80c71789205db81ac599175a4a7b777"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on005429",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005429",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005429.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "17.7 GB (279 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "fce3690a077a519c1fbdc5d76b23b3b407e1795d6c47410a2594192abd89b9e5"
 }
