@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Auditory oddball comparison (Optimum-1, Learning-oddball, and the local–global paradigm)",
-  "description": "This dataset comprises raw EEG recordings from 15 participants performing three auditory oddball paradigms: Optimum-1 (optimized for mismatch negativity), learning-oddball (optimized for P3b), and local–global paradigm (for local and global effects). The data were collected in a single EEG session with three consecutive tasks presented as separate sessions, enabling within-individual comparison of event-related potential sensitivity across specialized oddball sequences.",
-  "methods_description": "EEG data were recorded from 15 participants (14 at 2500 Hz, 1 at 5000 Hz sampling rate) performing three auditory oddball sequences presented consecutively in counterbalanced order. Each participant completed the Optimum-1 sequence for MMN assessment, learning-oddball for P3b assessment, and local–global paradigm for local and global effect assessment. Stimulation parameters and event timestamps are provided in source data files, with corrected event markers accounting for occasional trigger skipping by the recording system.",
+  "description": "This dataset contains raw EEG recordings from 15 participants who each completed three auditory oddball paradigms within a single experimental session: the Optimum-1 sequence for mismatch negativity (MMN), the learning-oddball sequence for P3b, and the local-global paradigm for assessing local and global auditory novelty effects. The dataset was collected to compare within-individual sensitivity of MMN and P3b responses across these different oddball paradigms. It includes original stimulation triggers, corrected event files, and source stimulation sequence definitions used in the analysis.",
+  "methods_description": "EEG data were recorded continuously across three auditory oddball paradigms (Optimum-1, learning-oddball, local-global) presented in one session per participant, with task order varying between participants. Most participants were recorded at 2500 Hz sampling rate, except one participant recorded at 5000 Hz. Stimulation sequences were generated and timed using Psychtoolbox, with event timestamps used to correct for occasionally skipped triggers in the recording system, formatted according to FieldTrip's cfg.trl convention.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,13 +17,13 @@
       "term": "EEG"
     },
     {
-      "term": "auditory oddball"
-    },
-    {
       "term": "mismatch negativity"
     },
     {
       "term": "P3b"
+    },
+    {
+      "term": "auditory oddball paradigm"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -33,6 +33,12 @@
     },
     {
       "term": "local-global paradigm"
+    },
+    {
+      "term": "FieldTrip"
+    },
+    {
+      "term": "Psychtoolbox"
     }
   ],
   "related_identifiers": [
@@ -42,14 +48,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005429",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds005429.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005429",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
