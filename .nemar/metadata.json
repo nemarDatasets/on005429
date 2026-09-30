@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Auditory oddball comparison (Optimum-1, Learning-oddball, and the local–global paradigm)",
-  "description": "This dataset contains raw EEG recordings from 15 participants who each completed three auditory oddball paradigms within a single experimental session: the Optimum-1 sequence for mismatch negativity (MMN), the learning-oddball sequence for P3b, and the local-global paradigm for assessing local and global auditory novelty effects. The dataset was collected to compare within-individual sensitivity of MMN and P3b responses across these different oddball paradigms. It includes original stimulation triggers, corrected event files, and source stimulation sequence definitions used in the analysis.",
-  "methods_description": "EEG data were recorded continuously across three auditory oddball paradigms (Optimum-1, learning-oddball, local-global) presented in one session per participant, with task order varying between participants. Most participants were recorded at 2500 Hz sampling rate, except one participant recorded at 5000 Hz. Stimulation sequences were generated and timed using Psychtoolbox, with event timestamps used to correct for occasionally skipped triggers in the recording system, formatted according to FieldTrip's cfg.trl convention.",
+  "description": "Raw EEG recordings from 15 participants who each completed three auditory oddball sequences: the Optimum-1 paradigm for mismatch negativity (MMN), a learning-oddball paradigm for P3b, and the local–global paradigm for local and global effects. The dataset supports comparison of within-individual sensitivity of MMN and P3b effects across specialized oddball sequences and the local–global paradigm. Corrected event files, stimulation sequence definitions and stimulus presentation code are included.",
+  "methods_description": "Each participant completed all three auditory sequences consecutively in one EEG session, with order varying between participants. EEG was sampled at 2500 Hz (5000 Hz for participant 13). Stimulation was run with Psychtoolbox. Triggers skipped by the recording system were interpolated from Psychtoolbox event timestamps, and the corrected event samples are provided in the _events files. The local–global sequence was recorded in two runs (three runs for participant 5, who needed an extra break).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -23,22 +23,30 @@
       "term": "P3b"
     },
     {
-      "term": "auditory oddball paradigm"
+      "term": "auditory oddball"
+    },
+    {
+      "term": "local–global paradigm"
     },
     {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "local-global paradigm"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "FieldTrip"
+      "term": "Evoked Potentials, Auditory",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005071"
     },
     {
-      "term": "Psychtoolbox"
+      "term": "Acoustic Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000161"
     }
   ],
   "related_identifiers": [
@@ -64,7 +72,7 @@
     "eeg"
   ],
   "sizes": [
-    "17.7 GB (279 files)"
+    "16.47 GB (279 files)"
   ],
   "formats": [
     ".eeg",
